@@ -13,8 +13,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LauncherActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,15 +22,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GetInfoFromReceipt"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
-        </activity>
+            android:name=".GetInfoFromReceiptActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
 
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocr" />
 
+        <activity android:name=".MainMenuActivity"></activity>
     </application>
 
 </manifest>

@@ -22,7 +22,7 @@ public class LauncherActivity extends AppCompatActivity {
                 checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.CAMERA}, CAMERA_PERMISSION);
         } else {
-            Intent intent = new Intent(getApplicationContext(), GetInfoFromReceipt.class);
+            Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
             startActivity(intent);
             finish();
         }
@@ -34,7 +34,7 @@ public class LauncherActivity extends AppCompatActivity {
             case CAMERA_PERMISSION:
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     Toast.makeText(this, "Permission Granted!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(), GetInfoFromReceipt.class);
+                    Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
