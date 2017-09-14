@@ -19,7 +19,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@android:drawable/ic_dialog_map"/>
+        android:background="@android:drawable/ic_dialog_map"
+        android:contentDescription="map"/>
 
     <ImageButton
         android:id="@+id/closeButton"
@@ -27,7 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:background="@android:drawable/ic_menu_close_clear_cancel"/>
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="cancel"/>
 
     <TextView
         android:id="@+id/textView"

@@ -44,8 +44,7 @@ public class Tess {
 
     public String getOCRResult(Bitmap bitmap) {
         mTess.setImage(bitmap);
-        String result = mTess.getUTF8Text();
-        return result;
+        return mTess.getUTF8Text();
     }
 
     public void onDestroy() {
