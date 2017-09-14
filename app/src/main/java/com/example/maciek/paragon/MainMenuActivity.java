@@ -108,10 +108,10 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
 
         TextView sellerLabel = (TextView)row.findViewById(R.id.sellerLabel);
         sellerLabel.setText("Kamila i Roman");
-        //TextView dateLabel = (TextView)row.findViewById(R.id.dateLabel);
-        //dateLabel.setText("12/14/2001");
-        //TextView priceLabel = (TextView)row.findViewById(R.id.priceLabel);
-        //priceLabel.setText("12/14/2001");
+        TextView dateLabel = (TextView)row.findViewById(R.id.dateLabel);
+        dateLabel.setText("12/14/2001");
+        TextView priceLabel = (TextView)row.findViewById(R.id.priceLabel);
+        priceLabel.setText("23,59 PLN");
 
 //        TableRow row = new TableRow(this);
 //        ImageView receiptPhoto = new ImageView(this);

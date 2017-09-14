@@ -22,6 +22,7 @@
             android:layout_height="34dp"
             android:background="@color/blue"/>
         <TextView
+            android:id="@+id/dateLabel"
             android:layout_below="@+id/sellerLabel"
             android:layout_width="match_parent"
             android:layout_height="20dp"
@@ -29,6 +30,7 @@
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/priceLabel"
         android:layout_weight="3"
         android:layout_width="0dp"
         android:background="@color/emerald"
