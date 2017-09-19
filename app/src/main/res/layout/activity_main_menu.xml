@@ -55,43 +55,6 @@
 
     </TableLayout>
 
-    <EditText
-        android:id="@+id/sellerInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/dateInput"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:ems="12"
-        android:hint="Seller"
-        android:inputType="text|textCapWords"
-        android:imeOptions="actionNext"/>
-
-    <EditText
-        android:id="@+id/dateInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/priceInput"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:ems="12"
-        android:hint="Date"
-        android:imeOptions="actionNext"
-        android:inputType="date" />
-
-    <EditText
-        android:id="@+id/priceInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:ems="12"
-        android:hint="Price"
-        android:imeOptions="actionDone"
-        android:inputType="numberDecimal"
-        android:imeActionLabel="Over and out!"/>
-
     <ImageButton
         android:id="@+id/cameraButton"
         android:layout_width="55dp"
@@ -102,6 +65,19 @@
         android:background="@android:drawable/ic_menu_camera"
         android:contentDescription="camera"
         android:backgroundTint="@color/white"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:id="@+id/addEntryButton"
+        android:tint="@color/white"
+        android:src="@drawable/ic_add_36dp"
+        android:scaleType="center"
+        android:onClick="addNewEntry"/>
 
 
 </RelativeLayout>
